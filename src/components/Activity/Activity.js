@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationPin } from '@fortawesome/free-solid-svg-icons';
 import './Activity.css'
 import logo from '../../image/logo.jpg'
+import Break from '../Break/Break';
 
 const Activity = () => {
     return (
@@ -16,17 +17,20 @@ const Activity = () => {
             </div>
             <div className='user-health-info'>
                 <div>
-                    <p><h4>80</h4>kg</p>
+                    <p><strong>80</strong><small>kg</small></p>
                     <p>Weight</p>
                 </div>
                 <div>
-                    <p><h4>6.g</h4></p>
+                    <p><strong>6.5</strong></p>
                     <p>Height</p>
                 </div>
                 <div>
-                    <p><h4>25</h4>years</p>
+                    <p><strong>22</strong><small>years</small></p>
                     <p>Age</p>
                 </div>
+            </div>
+            <div>
+                <Break></Break>
             </div>
         </div>
     );

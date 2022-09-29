@@ -1,0 +1,17 @@
+.break-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: azure;
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 15px;
+    border: 1px solid grey;
+}
+
+.break-time p {
+    border: 1px solid grey;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
