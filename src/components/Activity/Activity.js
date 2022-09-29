@@ -6,7 +6,8 @@ import logo from '../../image/logo.jpg'
 import Break from '../Break/Break';
 import Details from '../Details/Details';
 
-const Activity = () => {
+const Activity = (props) => {
+    // console.log(props)
     return (
         <div className='activity'>
             <div className='user-info'>
@@ -34,7 +35,7 @@ const Activity = () => {
                 <Break></Break>
             </div>
             <div>
-                <Details></Details>
+                <Details listTime={props}></Details>
             </div>
         </div>
     );

@@ -3,10 +3,10 @@ import Activity from '../Activity/Activity';
 import Exercise from '../Exercise/Exercise';
 import './Club.css'
 import logo from '../../image/favIcon.jpeg'
-import Details from '../Details/Details';
 
 const Club = () => {
     const [exercises, setExercises] = useState([]);
+    const [time, setTime] = useState(0);
 
     useEffect(() => {
         fetch('data.json')
@@ -16,7 +16,7 @@ const Club = () => {
 
     const addTime = (selectedTime) => {
         // console.log(selectedTime);
-        // <Details Time={selectedTime}></Details>
+        setTime(selectedTime);
 
 
     }
@@ -39,7 +39,7 @@ const Club = () => {
                 </div>
             </div>
             <div className="activity-container">
-                <Activity></Activity>
+                <Activity time={time}></Activity>
             </div>
         </div>
     );
