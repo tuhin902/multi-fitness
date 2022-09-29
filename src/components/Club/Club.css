@@ -5,11 +5,27 @@
     background-color: rgba(186, 213, 225, 0.662);
 }
 
+.club-details {
+    margin-top: 50px;
+    margin-left: 45px;
+}
+
+.club-details img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.favimg {
+    display: flex;
+    align-items: center;
+}
+
 .exercise-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-    margin: 80px 30px;
+    margin: 0px 30px;
 }
 
 .activity-container {

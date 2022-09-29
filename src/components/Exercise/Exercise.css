@@ -1,6 +1,6 @@
 .exercise {
     width: 220px;
-    height: 450px;
+    height: 350px;
     border: 1px solid #95A0A7;
     border-radius: 8px;
     position: relative;
@@ -40,5 +40,11 @@
     border: none;
     padding: 15px;
     font-size: 16px;
+    background-color: rgb(78, 60, 190);
+    color: #FFFFFF;
 
+}
+
+.btn-list:hover {
+    background-color: rgb(0, 174, 255);
 }

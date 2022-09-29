@@ -4,6 +4,7 @@ import { faLocationPin } from '@fortawesome/free-solid-svg-icons';
 import './Activity.css'
 import logo from '../../image/logo.jpg'
 import Break from '../Break/Break';
+import Details from '../Details/Details';
 
 const Activity = () => {
     return (
@@ -31,6 +32,9 @@ const Activity = () => {
             </div>
             <div>
                 <Break></Break>
+            </div>
+            <div>
+                <Details></Details>
             </div>
         </div>
     );

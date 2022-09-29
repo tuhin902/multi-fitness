@@ -9,8 +9,8 @@ const Exercise = (props) => {
             <img src={picture} alt="" />
             <div className='exercise-info'>
                 <h4 className='exercise-name'>{name}</h4>
-                <p>Age:{age}</p>
-                <p>Time required :{time}s</p>
+                <p>Age: <strong>{age}</strong></p>
+                <p>Time required : <strong>{time}s</strong></p>
                 <button className='btn-list'>
                     <p>Add to list</p>
                 </button>
