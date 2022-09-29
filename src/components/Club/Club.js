@@ -3,6 +3,7 @@ import Activity from '../Activity/Activity';
 import Exercise from '../Exercise/Exercise';
 import './Club.css'
 import logo from '../../image/favIcon.jpeg'
+import Details from '../Details/Details';
 
 const Club = () => {
     const [exercises, setExercises] = useState([]);
@@ -15,20 +16,8 @@ const Club = () => {
 
     const addTime = (selectedTime) => {
         // console.log(selectedTime);
-        let setTime = {};
-        const storedTime = localStorage.getItem('setTime');
-        if (storedTime) {
-            setTime = JSON.parse(storedTime);
-        }
+        // <Details Time={selectedTime}></Details>
 
-        const Time = setTime[selectedTime.time];
-        // console.log(Time);
-
-        // if (Time) {
-        //     const newTime = Time + storedTime;
-        //     setTime[selectedTime.time] = newTime;
-        // }
-        localStorage.setItem('setTime', JSON.stringify(selectedTime));
 
     }
     return (
