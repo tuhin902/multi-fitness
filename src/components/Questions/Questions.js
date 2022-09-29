@@ -18,7 +18,15 @@ const Questions = () => {
                 </p>
                 <p><strong>State:</strong> The state represents parts of an Application that can change. Each component can have its State. The state is Mutable and It is local to the component only.</p>
             </div>
-
+            <div className='question'>
+                <h3>useEffect use cases except fetch API?</h3>
+                <p>useEffect use cases
+                    Running on state change: validating input field
+                    Running on state change: live filtering
+                    Running on state change: trigger animation on new array value
+                    Running on props change: update paragraph list on fetched API data update
+                    Running on props change: updating fetched API data to get BTC updated price</p>
+            </div>
         </div>
     );
 };
