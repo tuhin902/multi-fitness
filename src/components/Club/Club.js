@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Activity from '../Activity/Activity';
 import Exercise from '../Exercise/Exercise';
 import './Club.css'
 
@@ -17,8 +18,8 @@ const Club = () => {
                     exercises.map(exercise => <Exercise key={exercise.id} exercise={exercise}></Exercise>)
                 }
             </div>
-            <div className="activity-info">
-                <h4>Activity</h4>
+            <div className="activity-container">
+                <Activity></Activity>
             </div>
         </div>
     );

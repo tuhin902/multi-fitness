@@ -1,6 +1,8 @@
 .club-container {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+    background-color: rgba(186, 213, 225, 0.662);
 }
 
 .exercise-container {
@@ -8,4 +10,8 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     margin: 80px 30px;
+}
+
+.activity-container {
+    background-color: #FFFFFF;
 }
