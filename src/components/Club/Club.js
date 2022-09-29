@@ -12,6 +12,25 @@ const Club = () => {
             .then(res => res.json())
             .then(data => setExercises(data));
     }, [])
+
+    const addTime = (selectedTime) => {
+        // console.log(selectedTime);
+        let setTime = {};
+        const storedTime = localStorage.getItem('setTime');
+        if (storedTime) {
+            setTime = JSON.parse(storedTime);
+        }
+
+        const Time = setTime[selectedTime.time];
+        // console.log(Time);
+
+        // if (Time) {
+        //     const newTime = Time + storedTime;
+        //     setTime[selectedTime.time] = newTime;
+        // }
+        localStorage.setItem('setTime', JSON.stringify(selectedTime));
+
+    }
     return (
         <div className='club-container'>
             <div>
@@ -24,7 +43,9 @@ const Club = () => {
                 </div>
                 <div className="exercise-container">
                     {
-                        exercises.map(exercise => <Exercise key={exercise.id} exercise={exercise}></Exercise>)
+                        exercises.map(exercise => <Exercise key={exercise.id} exercise={exercise}
+                            addTime={addTime}
+                        ></Exercise>)
                     }
                 </div>
             </div>

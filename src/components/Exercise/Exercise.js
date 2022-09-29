@@ -2,7 +2,7 @@ import React from 'react';
 import './Exercise.css'
 
 const Exercise = (props) => {
-    console.log(props);
+    // console.log(props);
     const { name, age, picture, time } = props.exercise;
     return (
         <div className='exercise'>
@@ -11,7 +11,7 @@ const Exercise = (props) => {
                 <h4 className='exercise-name'>{name}</h4>
                 <p>Age: <strong>{age}</strong></p>
                 <p>Time required : <strong>{time}s</strong></p>
-                <button className='btn-list'>
+                <button onClick={() => props.addTime(time)} className='btn-list'>
                     <p>Add to list</p>
                 </button>
 
